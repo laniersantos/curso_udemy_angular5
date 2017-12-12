@@ -1,0 +1,13 @@
+<input type="text" class="form-control" [(ngModel)]="username">
+<label>{{username}}</label>
+<p></p>
+<button class="btn btn-primary" [disabled]="!username" (click)="onResetClick()">Reset</button>
+
+<p [ngStyle]="{'padding-top':'2%'}"></p>
+<button class="btn btn-primary" (click)="onShowDetailClick()">Display Details</button>
+<p *ngIf=showDetail>Secret Password = tuna</p>
+
+<p [ngStyle]="{'padding-top':'1%'}"></p>
+<div *ngFor="let log of logClicks; let i = index" 
+    [ngStyle]="{backgroundColor: i >= 5 ? 'blue' : 'transparent'}" 
+    [ngClass]="{'white-text': i >= 5}">{{log}}</div>

@@ -7,6 +7,7 @@ import { AppServersComponent } from './app-servers/app-servers.component';
 import { AppServerComponent } from './app-server/app-server.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
+import { InputTwoWayDatabindComponent } from './input-two-way-databind/input-two-way-databind.component';
 
 
 @NgModule({
@@ -15,10 +16,12 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
     AppServerComponent,
     AppServersComponent,
     SuccessAlertComponent,
-    WarningAlertComponent
+    WarningAlertComponent,
+    InputTwoWayDatabindComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
